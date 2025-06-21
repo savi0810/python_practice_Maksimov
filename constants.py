@@ -2,7 +2,7 @@
 COMMAND_NAME = "get_tpl"
 OUTPUT_FORMAT = "{key}: {value}"
 DATE_FORMATS = ["%d.%m.%Y", "%Y-%m-%d"]
-PHONE_PATTERN = r"^\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}$"
+PHONE_PATTERN = r"^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"
 EMAIL_PATTERN = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
 
 # Сообщения
