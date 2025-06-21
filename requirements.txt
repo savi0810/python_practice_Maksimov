@@ -1,2 +1,2 @@
-python
-tinydb
+pytest~=8.4.1
+tinydb~=4.8.2
