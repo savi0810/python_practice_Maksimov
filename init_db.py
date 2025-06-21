@@ -2,15 +2,8 @@ from form_manager import FormManager
 from constants import SUCCESSFUL_INIT_DB
 
 def init_database(db_path='forms_db.json'):
-    """
-    Инициализирует базу данных с шаблонами форм
-    
-    Args:
-        db_path (str): Путь к файлу базы данных
-    """
     manager = FormManager(db_path)
     
-    # Шаблоны форм
     templates = [
         {
             "name": "Registration_user",
@@ -44,13 +37,9 @@ def init_database(db_path='forms_db.json'):
         }
     ]
     
-    # Очистка и заполнение базы данных
     manager.db.truncate()
     for template in templates:
         manager.add_template(template)
-    
-    # Закрываем соединение с базой
-    manager.close()
     
     print(SUCCESSFUL_INIT_DB)
 
