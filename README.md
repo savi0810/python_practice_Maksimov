@@ -10,9 +10,10 @@
 
 ### 1. Клонирование репозитория
 Откройте терминал и выполните:
-
+```bash
 git clone https://github.com/savi0810/python_practice_Maksimov
 cd python_practice_Maksimov
+```
 
 ### 2. Установка зависимостей 
 Откройте терминал и выполните:
